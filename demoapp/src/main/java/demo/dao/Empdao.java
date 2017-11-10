@@ -23,4 +23,9 @@ public class Empdao extends HibernateDaoSupport{
 		return super.getHibernateTemplate().find(hql);
 	}
     
+    @Transactional
+    public List load(String hql) {
+		return super.getHibernateTemplate().find(hql);
+	}
+    
 }
